@@ -1,3 +1,4 @@
+
 name: Simple Workflow
 
 on:
@@ -18,7 +19,7 @@ jobs:
             cp ./scripts/main.py ./.github/actions/action_1.2/main.py
         - name: 1.2 EXECUTING THE PYTHON SCRIPT
           uses: ./.github/actions/action_1.2
-        - name: Add new inputs in log.md
+        - name: Add new inputs in log.txt
           run: |
             echo ${{ github.event.inputs.text }} >> log.txt
             date +'%F %H:%M:%S' >> log.txt
