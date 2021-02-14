@@ -1,7 +1,11 @@
 name: Simple Workflow
 
-on:
+on: 
     workflow_dispatch:
+        inputs:
+          text:
+            description: 'Enter something'
+            required: true
 
 jobs:
 
@@ -13,12 +17,7 @@ jobs:
 name: Simple Workflow
 
 
-on: 
-    workflow_dispatch:
-        inputs:
-          text:
-            description: 'Enter something'
-            required: true
+
 
 jobs:
     TIMESTAMP:
