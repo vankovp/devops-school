@@ -27,7 +27,8 @@ jobs:
           with:
               name: log.md
               path: /home/runner/work/devops-school/devops-school/log.md
-        - name: 1.4 DOWNLOAD ARTIFACT2 
+        - name: 1.4 DOWNLOAD ARTIFACT2
+          uses: actions/upload-artifact@v2
           with:
               name: log.txt
               path: /home/runner/work/devops-school/devops-school/log.txt
